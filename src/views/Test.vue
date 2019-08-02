@@ -83,7 +83,7 @@ export default class Test extends Vue {
           console.log("无文本");
         })
         .then(() => {
-          this.$refs.bannerContent.scrollTop = this.$refs.contentScoll.offsetHeight;
+          // this.$refs.bannerContent.scrollTop = this.$refs.contentScoll.offsetHeight;
         });
     };
   }
