@@ -1,23 +1,40 @@
 <template>
   <div class="home">
-    Home
+    <el-tabs :tab-position="tabPosition" style="height: 100%;">
+      <el-tab-pane label="首页" lazy>
+        <HomePage/>
+      </el-tab-pane>
+      <el-tab-pane label="介绍" lazy>
+        2132
+      </el-tab-pane>
+      <el-tab-pane label="文档" lazy>文档</el-tab-pane>
+      <el-tab-pane label="关于我" lazy>关于我</el-tab-pane>
+    </el-tabs>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import ViewModel from "../store/index";
-@Component({})
+import HomePage from '../components/homepage/Index.vue'
+@Component({
+  components: {
+    HomePage
+  }
+})
 export default class Home extends Vue {
-  public state = new ViewModel();
+  public tabPosition:string= 'left'
   mounted() {}
 }
 </script>
 
-<style scoped>
-.content,.editore {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 0 10px #ccc;
+<style scope >
+.home{
+  height: 100%;
+}
+.el-tabs--left .el-tabs__header.is-left{
+  margin-right: 0;
+}
+.el-tabs__content,.el-tab-pane {
+  height: 100%;
 }
 </style>

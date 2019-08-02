@@ -1,25 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">主页</router-link> |
-      <router-link to="/about">预览简历</router-link>
-    </div>
-    <div class="container">
-      <router-view/>
+    <div class="content">
+      <router-view />
     </div>
   </div>
 </template>
-
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+@Component({})
+export default class App extends Vue {
+  mounted() {}
+  public tabPosition:string= 'left'
+  public activeName: string = "first";
+  public handleClick(tab: any, event: any) {}
+}
+</script>
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  height: 100%;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height: 100%;
+  /* background: rgba(33, 247, 13, 0.336); */
+}
+.content {
+  height: 100%;
 }
 #nav {
   padding: 30px;
@@ -31,12 +45,7 @@
   color: #2c3e50;
   text-decoration: none;
 }
-
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-.container{
-  width: 1200px;
-  margin: 0 auto;
 }
 </style>

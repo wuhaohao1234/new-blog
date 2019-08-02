@@ -14,6 +14,12 @@ import {
   RadioButton,
   RadioGroup,
   Tree,
+  Container,
+  Header,
+  Main,
+  Submenu,
+  Tabs,
+  TabPane,
 } from 'element-ui';
 // 引入lodah
 import _ from 'lodash'
@@ -33,6 +39,13 @@ Vue.component(FormItem.name, FormItem);
 Vue.component(RadioButton.name, RadioButton);
 Vue.component(RadioGroup.name, RadioGroup);
 Vue.component(Tree.name, Tree);
+Vue.component(Submenu.name, Submenu);
+
+Vue.component(Container.name, Container);
+Vue.component(Header.name, Header);
+Vue.component(Main.name, Main);
+Vue.component(Tabs.name, Tabs);
+Vue.component(TabPane.name, TabPane);
 
 Vue.config.productionTip = false;
 
