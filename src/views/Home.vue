@@ -1,25 +1,13 @@
 <template>
   <div class="home">
-    <el-row :gutter="20">
-      <el-col :span="16">
-        <Content :stateData=state />
-      </el-col>
-      <el-col :span="8">
-        <Editore />
-      </el-col>
-    </el-row>
+    Home
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import ViewModel from "../store/index";
-@Component({
-  components: {
-    Content: () => import("../components/home-page/Content.vue"),
-    Editore: () => import("../components/home-page/Editore.vue")
-  }
-})
+@Component({})
 export default class Home extends Vue {
   public state = new ViewModel();
   mounted() {}
