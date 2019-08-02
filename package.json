@@ -1,0 +1,45 @@
+{
+  "name": "new-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "start": "npm run serve",
+    "serNode": "node serve"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.136",
+    "better-scroll": "^2.0.0-alpha.20",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.10.1",
+    "localstorage-ponyfill": "^1.0.2",
+    "lodash": "^4.17.15",
+    "mobx": "^5.13.0",
+    "mobx-vue": "^2.0.9",
+    "nodejs-websocket": "^1.7.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-happy-scroll": "^2.1.0",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.4",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-plugin-unit-mocha": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-plugin-component": "^1.1.1",
+    "chai": "^4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
