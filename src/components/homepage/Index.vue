@@ -4,7 +4,7 @@
       Coding Webpage
     </h1>
     <h3>网站快速成型工具</h3>
-    <p>codePage，一套为不懂编程的人准备的快速网页生成工具</p>
+    <p>codePage，一套为不懂编程的人准备的静态网页生成工具</p>
     <el-button @click="goEdit" type="primary" round>Play Game<i class="el-icon-arrow-right el-icon--right"></i></el-button>
   </div>
 </template>

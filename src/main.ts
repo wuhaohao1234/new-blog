@@ -20,6 +20,8 @@ import {
   Submenu,
   Tabs,
   TabPane,
+  Dialog,
+  Message
 } from 'element-ui';
 // 引入lodah
 import _ from 'lodash'
@@ -28,6 +30,7 @@ import { createLocalStorage } from "localstorage-ponyfill";
 
 Vue.prototype._ = _
 Vue.prototype.$createLocalStorage = createLocalStorage
+Vue.prototype.$Message = Message;
 
 Vue.component(Button.name, Button);
 Vue.component(Select.name, Select);
@@ -46,6 +49,7 @@ Vue.component(Header.name, Header);
 Vue.component(Main.name, Main);
 Vue.component(Tabs.name, Tabs);
 Vue.component(TabPane.name, TabPane);
+Vue.component(Dialog.name, Dialog);
 
 Vue.config.productionTip = false;
 
