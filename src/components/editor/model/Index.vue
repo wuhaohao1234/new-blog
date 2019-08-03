@@ -57,6 +57,7 @@ li {
   list-style: none;
 }
 .el-button {
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 </style>
